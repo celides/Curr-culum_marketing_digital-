@@ -15,6 +15,17 @@
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
         body { background-color: var(--light); color: var(--text); line-height: 1.6; }
         header { background: var(--primary); color: white; padding: 3rem 1.5rem; text-align: center; }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        
         header h1 { font-size: 2.5rem; letter-spacing: -1px; margin-bottom: 0.5rem; }
         header p { color: #94a3b8; font-size: 1.2rem; font-weight: 300; }
         .container { max-width: 1000px; margin: 2rem auto; padding: 0 1.5rem; }
@@ -27,7 +38,10 @@
         .job-company { color: var(--accent); font-size: 0.95rem; font-weight: 600; margin-bottom: 0.5rem; }
         ul { list-style-position: inside; margin-left: 0.5rem; }
         li { margin-bottom: 0.25rem; }
-        .badge { background: #e2e8f0; color: var(--primary); padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.85rem; display: inline-block; margin: 0.25rem; font-weight: 500; }
+        
+        /* Etiquetas de habilidades limpias sin números */
+        .badge { background: #e2e8f0; color: var(--primary); padding: 0.35rem 0.75rem; border-radius: 6px; font-size: 0.85rem; display: inline-block; margin: 0.25rem; font-weight: 500; border-left: 3px solid var(--accent); }
+        
         .btn { display: block; color: white; padding: 0.75rem 1.5rem; border-radius: 6px; text-decoration: none; font-weight: bold; text-align: center; margin-top: 0.5rem; transition: background 0.2s; border: none; width: 100%; }
         .btn-accent { background: var(--accent); }
         .btn-accent:hover { background: #1d4ed8; }
@@ -40,6 +54,8 @@
 <body>
 
 <header>
+    <!-- Tu fotografía de perfil integrada en el diseño -->
+    <img src="https://drive.google.com/uc?export=view&id=1gHS6x13EpKdkXQGxYRc3QZWLYaDxD-qn" alt="Juan Carlos Pérez Martínez" class="profile-img">
     <h1>Lic. Juan Carlos Pérez Martínez</h1>
     <p>Diseño Visual Estratégico, UX/UI & Optimización Digital</p>
 </header>
@@ -127,8 +143,10 @@
             </section>
 
             <section>
-                <h2>Portafolios & Prensa</h2>
+                <h2>Portafolios & Canales</h2>
                 <div class="links-sidebar">
+                    <a href="https://www.youtube.com/feed/my%20videos" target="_blank">🔴 Canal YouTube (Feed Personal)</a>
+                    <a href="https://www.youtube.com/channel/UCIjYDnrBmAOLirho9sX0WA" target="_blank">🎬 Canal YouTube (Producciones)</a>
                     <a href="https://www.behance.net/JuanCarlosPerezMtz" target="_blank">🎨 Behance UI/UX Portfolio</a>
                     <a href="https://www.viewbug.com/member/juancarlosperezmartinez" target="_blank">📷 ViewBug (Fotografía Premium)</a>
                     <a href="https://www.saatchiart.com/all?query=juan%20carlos%20perez%20martineaz" target="_blank">🖼️ Saatchi Art Gallery</a>
@@ -137,15 +155,31 @@
             </section>
 
             <section>
-                <h2>Software & Competencias</h2>
+                <h2>Herramientas Digitales & Skills</h2>
                 <div>
-                    <span class="badge">Photoshop (70%)</span>
-                    <span class="badge">Premiere Pro (80%)</span>
-                    <span class="badge">Word & PowerPoint (80%)</span>
-                    <span class="badge">After Effects (30%)</span>
-                    <span class="badge">Cinema 4D (20%)</span>
-                    <span class="badge">WordPress & Elementor (80%)</span>
+                    <!-- Suite de Adobe e Imagen -->
+                    <span class="badge">Adobe Photoshop</span>
+                    <span class="badge">Adobe Premiere Pro</span>
+                    <span class="badge">Adobe Lightroom</span>
+                    <span class="badge">Adobe After Effects</span>
+                    <span class="badge">Cinema 4D</span>
+                    <span class="badge">Adobe Audition</span>
+                    
+                    <!-- Entorno Web & CMS -->
+                    <span class="badge">WordPress & Elementor</span>
                     <span class="badge">HTML5 & CSS3</span>
+                    <span class="badge">Principios de SEO</span>
+                    
+                    <!-- Soporte Técnico y Sistemas Móviles -->
+                    <span class="badge">Soporte Técnico de Hardware</span>
+                    <span class="badge">Formateo e Instalación de Software</span>
+                    <span class="badge">Sistemas Operativos Móviles (iOS/Android)</span>
+                    <span class="badge">Redes y Conectividad</span>
+                    
+                    <!-- Gestión de Oficina y Metodologías -->
+                    <span class="badge">Microsoft PowerPoint</span>
+                    <span class="badge">Microsoft Word</span>
+                    <span class="badge">Microsoft Excel</span>
                     <span class="badge">Neuropsicología Visual</span>
                     <span class="badge">Metapareidolia Pictórica</span>
                     <span class="badge">Prompt Engineering (IA)</span>
